@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Animals</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/style.css" />
+</head>
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="name" class="primary">Name</label>
+                <input type="text" id="name" required/>
+            </div>
+            <div class="form-item">
+                <label for="type" class="primary">Type</label>
+                <select id="type">
+                    <option value="" disabled selected></option>
+                    <option value="Plant">Plant</option>
+                    <option value="Insect">Insect</option>
+                    <option value="Reptile">Reptile</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Fish">Fish</option>
+                    <option value="Mammal">Mammal</option>
+                    <option value="Amphibian">Amphibian</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="location" class="primary">Location</label>
+                <input type="text" id="location" required/>
+            </div>
+            <div class="form-item">
+                <label for="population" class="primary">Population</label>
+                <label for="<100">< 100</label>
+                <input type="radio" id="population" name="population" value="< 100" />
+                <label for="<1000">< 1000</label>
+                <input type="radio" id="population" name="population" value="< 1000" />
+                <label for="unknown">Unknown</label>
+                <input type="radio" id="population" name="population" value="Unknown" />
+            </div>
+            <div class="form-item">
+                <label for="threats" class="primary">Threats</label>
+                <label for="agriculture">Agriculture</label>
+                <input type="checkbox" id="agriculture" name="agriculture" value="Agriculture" />
+                <label for="fire">Fire</label>
+                <input type="checkbox" id="fire" name="fire" value="Fire" />
+                <label for="climate_change">Climate change</label>
+                <input type="checkbox" id="climate_change" name="climate_change" value="Climate change" />
+                <label for="hunting">Hunting</label>
+                <input type="checkbox" id="hunting" name="hunting" value="Hunting" />
+                <label for="fishing">Fishing</label>
+                <input type="checkbox" id="fishing" name="fishing" value="Fishing" />
+                <label for="habitat_loss">Habitat loss</label>
+                <input type="checkbox" id="habitat_loss" name="habitat_loss" value="Habitat loss" />
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Save" />
+            </div>
+        </div>
+    </form>
+    <button id="delete-all">Delete All</button>
+    <h1>Endangered Animals List</h1>
+    <ul id="endangered-animals-list"></ul>
+</body>
+</html>
